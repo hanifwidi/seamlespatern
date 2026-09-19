@@ -5,7 +5,7 @@ import { loadJson, saveJson } from '@generated/lib/presets';
 import { LIMIT, fingerprint, worstMatch, type HistEntry, type Level } from '@generated/lib/variation';
 
 const KEY = 'ornamen-press.archive.v1';
-const CAP = 240;
+const CAP = 200;
 
 /**
  * Keeps the local archive of everything already exported and scores the live design
