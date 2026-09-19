@@ -11,7 +11,7 @@ import { bumpName, proposeVariation, type Proposal } from '@generated/lib/variat
 import { useArchive } from '@generated/hooks/useArchive';
 
 const KEY = 'ornamen-press.v1';
-const MAX_ORN = 80;
+const MAX_ORN = 60;
 const DEFAULT_PALETTE = ['#1f1b16', '#b4552d', '#dfa04a', '#7d8b63', '#3f5d62'];
 const DEFAULT_NAME = 'seamless-ornamen-01';
 
