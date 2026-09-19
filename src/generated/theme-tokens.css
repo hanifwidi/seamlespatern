@@ -1,0 +1,161 @@
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@300;400;500;600&family=IBM+Plex+Mono:wght@400;500&display=swap');
+@reference "../index.css";
+
+:root {
+  --radius: 6px;
+  --radius-sm: 4px;
+  --radius-md: 6px;
+  --radius-lg: 6px;
+  --radius-xl: 8px;
+  --radius-2xl: 8px;
+
+  --font-heading: 'IBM Plex Sans', system-ui, -apple-system, 'Segoe UI', sans-serif;
+  --font-body: 'IBM Plex Sans', system-ui, -apple-system, 'Segoe UI', sans-serif;
+  --font-mono: 'IBM Plex Mono', ui-monospace, 'SFMono-Regular', Menlo, monospace;
+
+  --font-weight-light: 300;
+  --font-weight-normal: 400;
+  --font-weight-medium: 500;
+  --font-weight-semibold: 600;
+  --font-weight-bold: 600;
+
+  --spacing-unit: 0.25rem;
+
+  /* extra surface ramp (single warm-mineral hue, lightness steps only) */
+  --surface-1: 30 7% 11%;
+  --surface-2: 30 6% 14%;
+  --surface-3: 30 6% 17%;
+  --border-strong: 30 6% 27%;
+  --grid-line: 30 6% 20%;
+
+  --background: 30 7% 8%;
+  --foreground: 32 8% 92%;
+  --card: 30 7% 11%;
+  --card-foreground: 32 8% 92%;
+  --popover: 30 7% 12%;
+  --popover-foreground: 32 8% 92%;
+  --primary: 22 74% 55%;
+  --primary-foreground: 24 40% 9%;
+  --secondary: 30 6% 15%;
+  --secondary-foreground: 32 8% 90%;
+  --muted: 30 6% 14%;
+  --muted-foreground: 32 7% 68%;
+  --accent: 30 6% 17%;
+  --accent-foreground: 32 8% 92%;
+  --destructive: 6 58% 58%;
+  --border: 30 6% 18%;
+  --input: 30 6% 24%;
+  --ring: 22 74% 55%;
+
+  --chart-1: 22 74% 55%;
+  --chart-2: 38 44% 60%;
+  --chart-3: 150 22% 56%;
+  --chart-4: 208 28% 62%;
+  --chart-5: 350 38% 60%;
+
+  --inverted-foreground: 24 40% 9%;
+  --gradient-from: 30 7% 11%;
+  --gradient-to: 30 7% 8%;
+
+  --status-new: 208 28% 62%;
+  --status-done: 150 32% 52%;
+  --status-in-progress: 38 52% 56%;
+  --status-resolved: 22 74% 55%;
+
+  --priority-low: 208 28% 62%;
+  --priority-low-foreground: 24 40% 9%;
+  --priority-medium: 38 52% 56%;
+  --priority-medium-foreground: 24 40% 9%;
+  --priority-high-foreground: 24 40% 9%;
+  --priority-urgent: 6 58% 50%;
+  --priority-urgent-foreground: 32 8% 95%;
+
+  --border-width: 1px;
+
+  --sidebar: 30 7% 10%;
+  --sidebar-foreground: 32 8% 92%;
+  --sidebar-primary: 22 74% 55%;
+  --sidebar-primary-foreground: 24 40% 9%;
+  --sidebar-accent: 30 6% 15%;
+  --sidebar-accent-foreground: 32 8% 92%;
+  --sidebar-border: 30 6% 18%;
+  --sidebar-ring: 22 74% 55%;
+}
+
+.dark {
+  --surface-1: 30 7% 11%;
+  --surface-2: 30 6% 14%;
+  --surface-3: 30 6% 17%;
+  --border-strong: 30 6% 27%;
+  --grid-line: 30 6% 20%;
+
+  --background: 30 7% 8%;
+  --foreground: 32 8% 92%;
+  --card: 30 7% 11%;
+  --card-foreground: 32 8% 92%;
+  --popover: 30 7% 12%;
+  --popover-foreground: 32 8% 92%;
+  --primary: 22 74% 55%;
+  --primary-foreground: 24 40% 9%;
+  --secondary: 30 6% 15%;
+  --secondary-foreground: 32 8% 90%;
+  --muted: 30 6% 14%;
+  --muted-foreground: 32 7% 68%;
+  --accent: 30 6% 17%;
+  --accent-foreground: 32 8% 92%;
+  --destructive: 6 58% 58%;
+  --border: 30 6% 18%;
+  --input: 30 6% 24%;
+  --ring: 22 74% 55%;
+
+  --chart-1: 22 74% 55%;
+  --chart-2: 38 44% 60%;
+  --chart-3: 150 22% 56%;
+  --chart-4: 208 28% 62%;
+  --chart-5: 350 38% 60%;
+
+  --inverted-foreground: 24 40% 9%;
+  --gradient-from: 30 7% 11%;
+  --gradient-to: 30 7% 8%;
+
+  --status-new: 208 28% 62%;
+  --status-done: 150 32% 52%;
+  --status-in-progress: 38 52% 56%;
+  --status-resolved: 22 74% 55%;
+
+  --priority-low: 208 28% 62%;
+  --priority-low-foreground: 24 40% 9%;
+  --priority-medium: 38 52% 56%;
+  --priority-medium-foreground: 24 40% 9%;
+  --priority-high-foreground: 24 40% 9%;
+  --priority-urgent: 6 58% 50%;
+  --priority-urgent-foreground: 32 8% 95%;
+
+  --border-width: 1px;
+
+  --sidebar: 30 7% 10%;
+  --sidebar-foreground: 32 8% 92%;
+  --sidebar-primary: 22 74% 55%;
+  --sidebar-primary-foreground: 24 40% 9%;
+  --sidebar-accent: 30 6% 15%;
+  --sidebar-accent-foreground: 32 8% 92%;
+  --sidebar-border: 30 6% 18%;
+  --sidebar-ring: 22 74% 55%;
+}
+
+body {
+  font-family: var(--font-body);
+  font-size: 13px;
+  letter-spacing: -0.005em;
+  font-feature-settings: 'tnum', 'ss01';
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: var(--font-heading);
+  letter-spacing: -0.015em;
+}
