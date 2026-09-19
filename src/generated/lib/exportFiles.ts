@@ -1,10 +1,11 @@
 export function safeName(raw: string): string {
   const clean = raw
     .trim()
+    .toLowerCase()
     .replace(/\.(eps|jpg|jpeg|svg)$/i, '')
-    .replace(/[^\w\-. ]+/g, '-')
-    .replace(/\s+/g, '-')
+    .replace(/[^a-z0-9-]+/g, '-')
     .replace(/-+/g, '-')
+    .replace(/^-|-$/g, '')
     .slice(0, 64);
   return clean || 'seamless-pattern';
 }
